@@ -1,0 +1,9 @@
+(executable
+ (name run)
+ (modules Run)
+ (libraries Rml))
+
+(executable
+ (name repl)
+ (modules Repl)
+ (libraries react lambda-term Rml))

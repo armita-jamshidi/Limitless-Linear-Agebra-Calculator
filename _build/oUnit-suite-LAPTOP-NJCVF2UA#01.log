@@ -1,0 +1,65 @@
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 I: Start test suite:0:unit.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Test suite:0:unit exited with an error.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Failure("Unimplemented: make_unit") in test suite:0:unit.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Rml__Checker.check_expr in file "src/checker.ml", line 483, characters 23-35
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Rml__Main.interp_expr in file "src/main.ml", line 12, characters 12-51
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Dune__exe__Main.make_test.(fun) in file "test/main.ml", line 7, characters 5-69
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: 
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 I: End test suite:0:unit.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 I: Start test suite:6:forty-two.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Test suite:6:forty-two exited with an error.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Failure("Unimplemented: make_int") in test suite:6:forty-two.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Rml__Checker.check_expr in file "src/checker.ml", line 486, characters 28-38
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Rml__Main.interp_expr in file "src/main.ml", line 12, characters 12-51
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Dune__exe__Main.make_test.(fun) in file "test/main.ml", line 7, characters 5-69
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: 
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 I: End test suite:6:forty-two.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 I: Start test suite:7:string.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Test suite:7:string exited with an error.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Failure("Unimplemented: make_string") in test suite:7:string.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Rml__Checker.check_expr in file "src/checker.ml", line 487, characters 34-47
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Rml__Main.interp_expr in file "src/main.ml", line 12, characters 12-51
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Dune__exe__Main.make_test.(fun) in file "test/main.ml", line 7, characters 5-69
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: 
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 I: End test suite:7:string.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 I: Start test suite:12:uop negate.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Test suite:12:uop negate exited with an error.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Failure("Unimplemented: make_int") in test suite:12:uop negate.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Rml__Checker.check_expr in file "src/checker.ml", line 486, characters 28-38
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Rml__Checker.check_bop.expected in file "src/checker.ml", line 570, characters 19-43
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Rml__Checker.check_uop.expected in file "src/checker.ml", line 640, characters 17-40
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Rml__Main.interp_expr in file "src/main.ml", line 12, characters 12-51
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Dune__exe__Main.make_test.(fun) in file "test/main.ml", line 7, characters 5-69
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: 
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 I: End test suite:12:uop negate.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 I: Start test suite:15:bop and.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Test suite:15:bop and exited with an error.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Failure("Unimplemented: make_bool") in test suite:15:bop and.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Rml__Checker.check_expr in file "src/checker.ml", line 484, characters 30-41
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Rml__Checker.check_bop.expected in file "src/checker.ml", line 570, characters 19-43
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Rml__Main.interp_expr in file "src/main.ml", line 12, characters 12-51
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Dune__exe__Main.make_test.(fun) in file "test/main.ml", line 7, characters 5-69
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: 
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 I: End test suite:15:bop and.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 I: Start test suite:19:match bool true.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Test suite:19:match bool true exited with an error.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Failure("Unimplemented: make_int") in test suite:19:match bool true.
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Raised at Stdlib.failwith in file "stdlib.ml", line 29, characters 17-33
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Rml__Checker.check_expr in file "src/checker.ml", line 486, characters 28-38
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Rml__Checker.check_eq in file "src/checker.ml", line 593, characters 17-41
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Rml__Checker.check_match in file "src/checker.ml", line 686, characters 15-38
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Rml__Main.interp_expr in file "src/main.ml", line 12, characters 12-51
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from Dune__exe__Main.make_test.(fun) in file "test/main.ml", line 7, characters 5-69
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 E: 
+2023-04-18T21:28:40+00:00 LAPTOP-NJCVF2UA#01 I: End test suite:19:match bool true.

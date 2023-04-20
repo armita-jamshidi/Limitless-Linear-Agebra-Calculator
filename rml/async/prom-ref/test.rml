@@ -1,0 +1,20 @@
+include "ref.rml"
+include "assign.rml"
+include "deref.rml"
+
+let incr (_ : unit) (counter : handle): unit promise = 
+  deref_async counter >>= fun (v : int) ->
+  print "[RML]<incr> The current value is: ";
+  println v;
+  return (assign_async counter (v + 1))
+
+let rec repeat (n : int) (counter : handle) : unit promise =
+  if n = 0 then (return ()) else
+  incr () counter >>= fun (_ : unit) ->
+  repeat (n-1) counter
+
+let main_job (_ : unit) : unit promise = 
+  let main_counter : handle = ref_async 0 in 
+  repeat 10 main_counter
+
+let _  = spawn main_job with ()

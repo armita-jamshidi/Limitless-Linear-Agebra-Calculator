@@ -1,0 +1,14 @@
+include "timmy.rml"
+include "mike.rml"
+include "john.rml"
+
+let main (_ : unit) : unit =
+  let null_ref : handle ref = ref self in
+  let (john : handle) = spawn john self with null_ref in
+  let (mike : handle) = spawn mike self with null_ref in
+  let (timmy : handle) = spawn timmy with (john, mike) in
+  null_ref := timmy;
+  send "initialized" to john;
+  send "initialized" to mike
+
+let () = main ()

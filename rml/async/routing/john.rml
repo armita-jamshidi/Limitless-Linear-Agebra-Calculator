@@ -1,0 +1,18 @@
+include "timmy.rml"
+
+let first_message : string = "first message from john"
+
+let second_message : string = "second message from john"
+
+let john (parent : handle) (timmy : handle ref) : unit promise =
+  recv parent >>= fun (_ : string) ->
+  let timmy : handle = !timmy in
+  println ("[John] Timmy, can you send this to Mike? - " ^ first_message);
+  send first_message to timmy;
+  recv timmy >>= fun (first_response : string) -> 
+  println ("[John] Mike says: " ^ first_response);
+  println ("[John] Timmy, can you send this to Mike? - " ^ second_message);
+  send second_message to timmy;
+  recv timmy >>= fun (second_response : string) ->
+  println ("[John] Mike says: " ^ second_response);
+  return ()

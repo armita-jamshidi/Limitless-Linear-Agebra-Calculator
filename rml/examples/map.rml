@@ -1,0 +1,63 @@
+/** [remove cmp k l] is map [l] with the first instance of key [k]
+  * removed, if it exists. Uses comparison function [cmp] to check
+  * for key equality. Does nothing if [k] is not in the map.
+  */
+let rec remove (cmp : 'k -> 'k -> int) (k : 'k) (l : ('k * 'v) list) : ('k * 'v) list =
+  match l with 
+  | [] -> [] 
+  | (k', v') :: t -> if cmp k k' = 0 then t else (k', v') :: (remove cmp k t)
+  end
+
+
+/** [insert cmp k v l] is an order preserving insertion
+  * of binding [(k, v)] into map [l], using comparison function [cmp].
+  * Will overwrite a binding [(k', v')] with [(k', v)] if [cmp k k' = 0].
+  */
+let rec insert (cmp : 'k -> 'k -> int) (k : 'k) (v : 'v) (l : ('k * 'v) list) : ('k * 'v) list =
+  match l with
+  | [] -> [(k, v)]
+  | (k', v') :: t ->
+    let (order : int) = cmp k k' in
+    if order < 0 then
+      (k, v) :: (k', v') :: t
+    else if order = 0 then
+      (k', v) :: t
+    else
+      (k', v') :: (insert cmp k v t)
+  end
+
+
+/** [get cmp def k l] is the value associated with key [k] in
+  * map [l] using comparison function [cmp].
+  * Returns [def] if [k] is not bound.
+  */
+let rec get (def : 'v) (cmp : 'k -> 'k -> int) (k : 'k) (l : ('k * 'v) list) : 'v =
+  match l with
+  | [] -> def
+  | (k', v') :: t -> if cmp k k' = 0 then v' else get def cmp k t
+  end
+
+
+/** [insert_sort cmp k v l] is a non-destructive version of [insert]. 
+  * Helper function for [sort].
+  */
+let rec insert_sort (cmp : 'k -> 'k -> int) (k : 'k) (v : 'v) (l : ('k * 'v) list) : ('k * 'v) list =
+  match l with
+  | [] -> [(k, v)]
+  | (k', v') :: t ->
+    if cmp k k' <= 0 then
+      (k, v) :: (k', v') :: t
+    else
+      (k', v') :: (insert_sort cmp k v t)
+  end
+
+
+/** [sort cmp l] is map [l] sorted by key according to comparison function [cmp]. */
+let rec sort (cmp : 'k -> 'k -> int) (l :('k * 'v) list) : ('k * 'v) list =
+  match l with
+  | [] -> []
+  | x :: [] -> [x]
+  | (k, v) :: t  -> insert_sort cmp k v (sort cmp t)
+  end
+
+let _ = println "Loaded map.rml"

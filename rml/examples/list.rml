@@ -1,0 +1,62 @@
+/** [append l l'] is the contents of list [l'] appended to list [l]. */
+let rec append (l : 'a list) (l' : 'a list) : 'a list =
+  match l with
+  | [] -> l'
+  | h :: t -> h :: (append t l')
+  end
+
+/** [flatten l] flattens a nested list [[l1; ...; ln]] to a list  [l1 @ ... @ ln] */
+let rec flatten (l : 'a list list) : 'a list =
+  match l with
+  | [] -> []
+  | h :: t -> append h (flatten t)
+  end
+
+/** [range n] is the list of integers [n - 1; ...; 0] */
+let rec range (n : int) : int list =
+  match n with
+  | 0 -> []
+  | n -> (n - 1) :: (range (n - 1))
+  end
+
+/** [nth default n l] is the [n]th element of list [l].
+  * Returns [default] if no such element exists.
+  */
+let rec nth (default : 'a) (n : int) (l : 'a list) : 'a =
+  match (n, l) with
+  | (0, h :: _) -> h
+  | (n, _ :: t) -> nth default (n - 1) t
+  | (_, _) -> default
+  end
+
+/** [is_empty l] is [true] if [l] is empty, or [false] otherwise. */
+let is_empty (l : 'a list) : bool =
+  match l with
+  | [] -> true
+  | _ -> false
+  end
+
+/** [filter f l] is a list [[e1; ...; en]] containing
+  * all elements of [l] such that [f ei] returns [true].
+  */
+let rec filter (f : 'a -> bool) (l : 'a list) : 'a list =
+  match l with
+  | [] -> []
+  | h :: t -> if f h then h :: (filter f t) else filter f t
+  end
+
+/** [map f l] is the list [[f e1; ...; f en]] for each element [ei] in list [l]. */
+let rec map (f : 'a -> 'b) (l : 'a list) : 'b list =
+  match l with
+  | [] -> []
+  | h :: t -> (f h) :: (map f t)
+  end
+
+/** [fold_left f acc l] is [f (f (f acc e1) ...) en]. */
+let rec fold_left (f : 'a -> 'b -> 'b) (acc : 'b) (l : 'a list) : 'b =
+  match l with
+  | [] -> acc
+  | h :: t -> fold_left f (f h acc) t
+  end
+
+let _ = println "Loaded list.rml."

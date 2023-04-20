@@ -1,0 +1,208 @@
+program: INCLUDE STR WITH
+##
+## Ends in an error in state: 193.
+##
+## list(incl) -> incl . list(incl) [ LET EOF ]
+##
+## The known suffix of the stack is as follows:
+## incl
+##
+
+Unexpected "with". Include syntax is `include "<filename>"`
+
+program: INCLUDE WITH
+##
+## Ends in an error in state: 1.
+##
+## incl -> INCLUDE . STR [ LET INCLUDE EOF ]
+##
+## The known suffix of the stack is as follows:
+## INCLUDE
+##
+
+Missing filename. Include syntax is `include "<filename>"`
+
+program: LET LPAREN VAR COLON BOOL RPAREN EQ FUN LPAREN VAR COLON BOOL RPAREN WITH
+##
+## Ends in an error in state: 52.
+##
+## exp -> FUN typed_var . ARROW exp [ WITH TO THEN SUB SEMICOLON RPAREN PIPE OR NE MUL MOD LT LET LE IN GT GE EQ EOF END ELSE DIV CONS COMMA CAT CASE ASSIGN AND ADD ]
+##
+## The known suffix of the stack is as follows:
+## FUN typed_var
+##
+
+Expected an arrow (->) for this anonymous function.
+Here is an example of a valid anonymous function:
+  fun (x : 'a) -> x
+
+program: LET LPAREN VAR COLON BOOL RPAREN EQ LET LPAREN VAR COLON BOOL RPAREN EQ VAR IN WITH
+##
+## Ends in an error in state: 136.
+##
+## exp -> LET typed_var EQ exp IN . exp [ WITH TO THEN SUB SEMICOLON RPAREN PIPE OR NE MUL MOD LT LET LE IN GT GE EQ EOF END ELSE DIV CONS COMMA CAT CASE ASSIGN AND ADD ]
+##
+## The known suffix of the stack is as follows:
+## LET typed_var EQ exp IN
+##
+
+Expected an expression after an `in`
+
+program: LET VAR COLON UNIT EQ FUN WITH
+##
+## Ends in an error in state: 54.
+##
+## exp -> FUN . typed_var ARROW exp [ WITH TO THEN SUB SEMICOLON RPAREN PIPE OR NE MUL MOD LT LET LE IN GT GE EQ EOF END ELSE DIV CONS COMMA CAT CASE ASSIGN AND ADD ]
+##
+## The known suffix of the stack is as follows:
+## FUN
+##
+
+Anonymous functions require type annotations and parentheses. For example:
+  fun x -> x
+and
+  fun x : 'a -> x
+are not valid. The following is correct:
+  fun (x : 'a) -> x
+
+program: LET LPAREN VAR COLON WITH
+##
+## Ends in an error in state: 9.
+##
+## typed_var -> LPAREN VAR COLON . typ RPAREN [ LPAREN EQ COLON ARROW ]
+##
+## The known suffix of the stack is as follows:
+## LPAREN VAR COLON
+##
+
+Expected a type (unit, int, ...) or a type variable ('a, 'x, ...)
+
+program: LET LPAREN VAR WITH
+##
+## Ends in an error in state: 8.
+##
+## typed_var -> LPAREN VAR . COLON typ RPAREN [ LPAREN EQ COLON ARROW ]
+##
+## The known suffix of the stack is as follows:
+## LPAREN VAR
+##
+
+Expected a type declaration. An example type declaration is:
+  x : 'a
+or
+  x : int
+
+program: LET VAR COLON UNIT ARROW WITH
+##
+## Ends in an error in state: 24.
+##
+## typ -> typ ARROW . typ [ RPAREN REF PROMISE MUL LIST EQ ARROW ]
+##
+## The known suffix of the stack is as follows:
+## typ ARROW
+##
+
+This is not a valid type. You must either use a type variable ('a, 'b, ...) or a primitive type.
+
+program: LET VAR COLON UNIT EQ AWAIT LPAREN VAR COLON BOOL RPAREN WITH
+##
+## Ends in an error in state: 105.
+##
+## exp -> AWAIT typed_var . EQ exp IN exp [ WITH TO THEN SUB SEMICOLON RPAREN PIPE OR NE MUL MOD LT LET LE IN GT GE EQ EOF END ELSE DIV CONS COMMA CAT CASE ASSIGN AND ADD ]
+##
+## The known suffix of the stack is as follows:
+## AWAIT typed_var
+##
+
+Expected an equal sign after this await expression.
+This is an example of a valid await:
+  await (x : unit) = sleep 100 in ...
+
+program: LET VAR COLON UNIT EQ VAR ADD WITH
+##
+## Ends in an error in state: 87.
+##
+## exp -> exp ADD . exp [ WITH TO THEN SUB SEMICOLON RPAREN PIPE OR NE MUL MOD LT LET LE IN GT GE EQ EOF END ELSE DIV CONS COMMA CAT CASE ASSIGN AND ADD ]
+##
+## The known suffix of the stack is as follows:
+## exp ADD
+##
+
+Expected an expression.
+
+program: LET VAR COLON UNIT EQ LET LPAREN VAR COLON BOOL RPAREN EQ VAR WITH
+##
+## Ends in an error in state: 154.
+##
+## exp -> LET typed_var EQ exp . IN exp [ WITH TO THEN SUB SEMICOLON RPAREN PIPE OR NE MUL MOD LT LET LE IN GT GE EQ EOF END ELSE DIV CONS COMMA CAT CASE ASSIGN AND ADD ]
+## exp -> exp . SEMICOLON exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE IN GT GE EQ DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . CONS exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE IN GT GE EQ DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . ASSIGN exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE IN GT GE EQ DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . ADD exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE IN GT GE EQ DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . SUB exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE IN GT GE EQ DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . MUL exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE IN GT GE EQ DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . DIV exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE IN GT GE EQ DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . MOD exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE IN GT GE EQ DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . AND exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE IN GT GE EQ DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . OR exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE IN GT GE EQ DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . LT exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE IN GT GE EQ DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . LE exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE IN GT GE EQ DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . GT exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE IN GT GE EQ DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . GE exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE IN GT GE EQ DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . EQ exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE IN GT GE EQ DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . NE exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE IN GT GE EQ DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . CAT exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE IN GT GE EQ DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . PIPE exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE IN GT GE EQ DIV CONS CAT ASSIGN AND ADD ]
+##
+## The known suffix of the stack is as follows:
+## LET typed_var EQ exp
+##
+## WARNING: This example involves spurious reductions.
+## This implies that, although the LR(1) items shown above provide an
+## accurate view of the past (what has been recognized so far), they
+## may provide an INCOMPLETE view of the future (what was expected next).
+## In state 69, spurious reduction of production exp -> app
+##
+
+Unexpected token after expression. Maybe you forgot the `in` for a `let` expression?
+A valid let expresion looks like:
+  let (x : int) = 1 in ...
+
+program: LET VAR COLON UNIT EQ BEGIN VAR WITH
+##
+## Ends in an error in state: 117.
+##
+## exp -> exp . SEMICOLON exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE GT GE EQ END DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . CONS exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE GT GE EQ END DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . ASSIGN exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE GT GE EQ END DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . ADD exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE GT GE EQ END DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . SUB exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE GT GE EQ END DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . MUL exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE GT GE EQ END DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . DIV exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE GT GE EQ END DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . MOD exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE GT GE EQ END DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . AND exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE GT GE EQ END DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . OR exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE GT GE EQ END DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . LT exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE GT GE EQ END DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . LE exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE GT GE EQ END DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . GT exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE GT GE EQ END DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . GE exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE GT GE EQ END DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . EQ exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE GT GE EQ END DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . NE exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE GT GE EQ END DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . CAT exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE GT GE EQ END DIV CONS CAT ASSIGN AND ADD ]
+## exp -> exp . PIPE exp [ SUB SEMICOLON PIPE OR NE MUL MOD LT LE GT GE EQ END DIV CONS CAT ASSIGN AND ADD ]
+## value -> BEGIN exp . END [ WITH VAR TRUE TO THEN SUB STR SEMICOLON RPAREN RBRACK PIPE OR NE MUL MOD LT LPAREN LET LE LBRACK INT_LIT IN GT GE FALSE EQ EOF END ELSE DIV CONS COMMA CAT CASE BEGIN ASSIGN AND ADD ]
+##
+## The known suffix of the stack is as follows:
+## BEGIN exp
+##
+## WARNING: This example involves spurious reductions.
+## This implies that, although the LR(1) items shown above provide an
+## accurate view of the past (what has been recognized so far), they
+## may provide an INCOMPLETE view of the future (what was expected next).
+## In state 69, spurious reduction of production exp -> app
+##
+
+Unexpected token after expression. Maybe you forgot to close a `begin` with an `end`?
+  begin
+    ...
+  end

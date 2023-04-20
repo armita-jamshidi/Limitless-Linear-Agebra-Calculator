@@ -1,0 +1,10 @@
+(library
+  (name rml)
+  (public_name Rml)
+  (libraries str menhirLib))
+
+(menhir
+  (modules parser)
+  (flags --table --explain))
+
+(ocamllex lexer)

@@ -1,0 +1,7 @@
+include "prom-ref.rml"
+
+/** [ref_async v] is the handle of a new [promise_reference] promise, spawned
+    with initial value [v] and the [self] handle. */
+let ref_async (v : int) : handle =
+  // TODO: Complete this function
+  self

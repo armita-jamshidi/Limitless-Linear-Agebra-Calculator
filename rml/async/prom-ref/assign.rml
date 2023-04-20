@@ -1,0 +1,4 @@
+/** [assign_async h v] sends an assignment message with value [v] to [h]. */
+let assign_async (prom_ref : handle) (v : int) : unit =
+  // TODO: Complete this function
+  ()

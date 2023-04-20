@@ -1,0 +1,105 @@
+type token =
+    WITH of Types.pre_info
+  | WILDCARD of Types.pre_info
+  | VAR of string Types.info
+  | UNIT of Types.pre_info
+  | TVAR of string Types.info
+  | TRUE of Types.pre_info
+  | TO of Types.pre_info
+  | THEN of Types.pre_info
+  | SUB of Types.pre_info
+  | STRING of Types.pre_info
+  | STR of string Types.info
+  | SPAWN of Types.pre_info
+  | SEND of Types.pre_info
+  | SEMICOLON of Types.pre_info
+  | SELF of Types.pre_info
+  | RPAREN of Types.pre_info
+  | RETURN of Types.pre_info
+  | REF of Types.pre_info
+  | RECV of Types.pre_info
+  | REC of Types.pre_info
+  | RBRACK of Types.pre_info
+  | PROMISE of Types.pre_info
+  | PIPE of Types.pre_info
+  | OR of Types.pre_info
+  | NOT of Types.pre_info
+  | NE of Types.pre_info
+  | MUL of Types.pre_info
+  | MOD of Types.pre_info
+  | MATCH of Types.pre_info
+  | LT of Types.pre_info
+  | LPAREN of Types.pre_info
+  | LIST of Types.pre_info
+  | LET of Types.pre_info
+  | LE of Types.pre_info
+  | LBRACK of Types.pre_info
+  | INT_LIT of int Types.info
+  | INT of Types.pre_info
+  | INCLUDE of Types.pre_info
+  | IN of Types.pre_info
+  | IF of Types.pre_info
+  | HANDLE of Types.pre_info
+  | GT of Types.pre_info
+  | GE of Types.pre_info
+  | FUN of Types.pre_info
+  | FALSE of Types.pre_info
+  | EQ of Types.pre_info
+  | EOF of Types.pre_info
+  | END of Types.pre_info
+  | ELSE of Types.pre_info
+  | DIV of Types.pre_info
+  | DEREF of Types.pre_info
+  | CONS of Types.pre_info
+  | COMMA of Types.pre_info
+  | COLON of Types.pre_info
+  | CAT of Types.pre_info
+  | CASE of Types.pre_info
+  | BOOL of Types.pre_info
+  | BIND of Types.pre_info
+  | BEGIN of Types.pre_info
+  | AWAIT of Types.pre_info
+  | ASSIGN of Types.pre_info
+  | ARROW of Types.pre_info
+  | AND of Types.pre_info
+  | ADD of Types.pre_info
+val fold_fun :
+  Types.var Types.info list -> Types.expr Types.info -> Types.expr Types.info
+val fold_fun_typ :
+  Types.var Types.info list -> Types.gtyp Types.info -> Types.gtyp Types.info
+val gen_fun_typ : Types.gtyp Types.info -> Types.gtyp Types.info
+val gen_let_pat_typ :
+  Types.var Types.info -> Types.expr Types.info -> Types.var Types.info
+val defold_list : Types.expr Types.info list -> Types.expr Types.info
+val defold_plist : Types.pat Types.info list -> Types.pat Types.info
+val ( <+> ) : Types.pre_info -> Types.pre_info -> Types.pre_info
+val menhir_begin_marker : int
+val xv_value : Types.expr Types.info
+val xv_una : Types.uop Types.info
+val xv_typed_pat : Types.var Types.info
+val xv_typ : Types.gtyp Types.info
+val xv_top_expr : Types.expr Types.info
+val xv_separated_nonempty_list_SEMICOLON_pat_ : Types.pat Types.info list
+val xv_separated_nonempty_list_SEMICOLON_app_ : Types.expr Types.info list
+val xv_separated_list_SEMICOLON_pat_ : Types.pat Types.info list
+val xv_separated_list_SEMICOLON_app_ : Types.expr Types.info list
+val xv_program : Types.prog
+val xv_pat : Types.pat Types.info
+val xv_paren_tpat : Types.var Types.info
+val xv_nonempty_list_paren_tpat_ : Types.var Types.info list
+val xv_nonempty_list_defn_ : Types.defn Types.info list
+val xv_nonempty_list_case_ :
+  (Types.pat Types.info * Types.expr Types.info) list
+val xv_loption_separated_nonempty_list_SEMICOLON_pat__ :
+  Types.pat Types.info list
+val xv_loption_separated_nonempty_list_SEMICOLON_app__ :
+  Types.expr Types.info list
+val xv_list_incl_ : string Types.info list
+val xv_incl : string Types.info
+val xv_exp : Types.expr Types.info
+val xv_defn : Types.defn Types.info
+val xv_case : Types.pat Types.info * Types.expr Types.info
+val xv_bin : Types.bop Types.info
+val xv_base_pat : Types.pat Types.info
+val xv_app : Types.expr Types.info
+val menhir_end_marker : int
