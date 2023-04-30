@@ -1,0 +1,150 @@
+(lang dune 3.7)
+(name Rml)
+(sections (lib .) (libexec .) (doc ../../doc/Rml))
+(files
+ (lib
+  (META
+   ast.ml
+   ast_factory.ml
+   ast_factory.mli
+   author.ml
+   author.mli
+   checker.ml
+   checker.mli
+   dune-package
+   eval.ml
+   eval.mli
+   lexer.ml
+   main.ml
+   main.mli
+   opam
+   parse.ml
+   parse.mli
+   parser.ml
+   parser.mli
+   promise.ml
+   promise.mli
+   rml.a
+   rml.cma
+   rml.cmi
+   rml.cmt
+   rml.cmx
+   rml.cmxa
+   rml.ml
+   rml__Ast.cmi
+   rml__Ast.cmt
+   rml__Ast.cmx
+   rml__Ast_factory.cmi
+   rml__Ast_factory.cmt
+   rml__Ast_factory.cmti
+   rml__Ast_factory.cmx
+   rml__Author.cmi
+   rml__Author.cmt
+   rml__Author.cmti
+   rml__Author.cmx
+   rml__Checker.cmi
+   rml__Checker.cmt
+   rml__Checker.cmti
+   rml__Checker.cmx
+   rml__Eval.cmi
+   rml__Eval.cmt
+   rml__Eval.cmti
+   rml__Eval.cmx
+   rml__Lexer.cmi
+   rml__Lexer.cmt
+   rml__Lexer.cmx
+   rml__Main.cmi
+   rml__Main.cmt
+   rml__Main.cmti
+   rml__Main.cmx
+   rml__Parse.cmi
+   rml__Parse.cmt
+   rml__Parse.cmti
+   rml__Parse.cmx
+   rml__Parser.cmi
+   rml__Parser.cmt
+   rml__Parser.cmti
+   rml__Parser.cmx
+   rml__Promise.cmi
+   rml__Promise.cmt
+   rml__Promise.cmti
+   rml__Promise.cmx
+   rml__Types.cmi
+   rml__Types.cmt
+   rml__Types.cmx
+   types.ml))
+ (libexec (rml.cmxs))
+ (doc (LICENSE)))
+(library
+ (name Rml)
+ (kind normal)
+ (archives (byte rml.cma) (native rml.cmxa))
+ (plugins (byte rml.cma) (native rml.cmxs))
+ (native_archives rml.a)
+ (requires str menhirLib)
+ (main_module_name Rml)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name rml)
+     (visibility public)
+     (kind alias)
+     (source (path Rml) (impl (path rml.ml-gen))))
+    (name Rml)
+    (modules
+     (module
+      (obj_name rml__Ast)
+      (visibility public)
+      (source (path Ast) (impl (path ast.ml))))
+     (module
+      (obj_name rml__Ast_factory)
+      (visibility public)
+      (source
+       (path Ast_factory)
+       (intf (path ast_factory.mli))
+       (impl (path ast_factory.ml))))
+     (module
+      (obj_name rml__Author)
+      (visibility public)
+      (source (path Author) (intf (path author.mli)) (impl (path author.ml))))
+     (module
+      (obj_name rml__Checker)
+      (visibility public)
+      (source
+       (path Checker)
+       (intf (path checker.mli))
+       (impl (path checker.ml))))
+     (module
+      (obj_name rml__Eval)
+      (visibility public)
+      (source (path Eval) (intf (path eval.mli)) (impl (path eval.ml))))
+     (module
+      (obj_name rml__Lexer)
+      (visibility public)
+      (source (path Lexer) (impl (path lexer.ml))))
+     (module
+      (obj_name rml__Main)
+      (visibility public)
+      (source (path Main) (intf (path main.mli)) (impl (path main.ml))))
+     (module
+      (obj_name rml__Parse)
+      (visibility public)
+      (source (path Parse) (intf (path parse.mli)) (impl (path parse.ml))))
+     (module
+      (obj_name rml__Parser)
+      (visibility public)
+      (source (path Parser) (intf (path parser.mli)) (impl (path parser.ml))))
+     (module
+      (obj_name rml__Promise)
+      (visibility public)
+      (source
+       (path Promise)
+       (intf (path promise.mli))
+       (impl (path promise.ml))))
+     (module
+      (obj_name rml__Types)
+      (visibility public)
+      (source (path Types) (impl (path types.ml))))))
+   (wrapped true))))

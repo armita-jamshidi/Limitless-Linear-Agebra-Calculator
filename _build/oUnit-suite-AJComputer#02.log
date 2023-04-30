@@ -1,0 +1,21 @@
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Start test suite:1:true.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Test suite:1:true is successful.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: End test suite:1:true.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Start test suite:5:else statement.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Test suite:5:else statement is successful.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: End test suite:5:else statement.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Start test suite:8:forty-two.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Test suite:8:forty-two is successful.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: End test suite:8:forty-two.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Start test suite:11:second binding is prioritiy.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Test suite:11:second binding is prioritiy is successful.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: End test suite:11:second binding is prioritiy.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Start test suite:14:uop negate.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Test suite:14:uop negate is successful.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: End test suite:14:uop negate.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Start test suite:17:bop and.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Test suite:17:bop and is successful.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: End test suite:17:bop and.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Start test suite:19:cons.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Test suite:19:cons is successful.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: End test suite:19:cons.

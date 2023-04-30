@@ -1,0 +1,212 @@
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Runner: processes
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Chooser: simple
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Configuration suite_name = "suite"
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Configuration cache_filename = "/home/aaj34/CS3110/a4/_build/oUnit-$(suite_name).cache"
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Configuration run_gc_full_major = "true"
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Configuration display = "true"
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Configuration results_style_1_X = "false"
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Configuration testdata_dir = "none"
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Configuration health_check_interval = "1."
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Configuration verbose = "false"
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Configuration chooser = "simple"
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Configuration output_html_dir = "none"
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Configuration processes_kill_period = "5."
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Configuration runner = "processes"
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Configuration shards = "4"
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Configuration processes_grace_period = "5."
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Configuration log_encoding = "utf-8"
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Configuration output_junit_file = "none"
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Configuration ci = "false"
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Configuration output_file = "/home/aaj34/CS3110/a4/_build/oUnit-$(suite_name)-$(shard_id).log"
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Using 4 workers maximum.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Starting worker number AJComputer#01.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Worker AJComputer#01 started.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Starting worker number AJComputer#02.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Worker AJComputer#02 started.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Starting worker number AJComputer#03.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Worker AJComputer#03 started.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Starting worker number AJComputer#04.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Worker AJComputer#04 started.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:3:zero, suite:2:false, suite:1:true, suite:0:unit.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Start test suite:0:unit.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Start test suite:1:true.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Start test suite:2:false.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:3:zero, suite:2:false, suite:1:true, suite:0:unit.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Test suite:0:unit is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:3:zero, suite:2:false, suite:1:true, suite:0:unit.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: End test suite:0:unit.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Test suite:1:true is successful.
+2023-04-30T22:38:32+00:00 AJComputer#04 I: Start test suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:3:zero, suite:2:false, suite:1:true, suite:0:unit.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: End test suite:1:true.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Test suite:2:false is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:4:if statement, suite:3:zero, suite:2:false, suite:1:true.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: End test suite:2:false.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:5:else statement, suite:4:if statement, suite:3:zero, suite:2:false.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Start test suite:4:if statement.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:6:negative, suite:5:else statement, suite:4:if statement, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Start test suite:5:else statement.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Start test suite:6:negative.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:6:negative, suite:5:else statement, suite:4:if statement, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Test suite:4:if statement is successful.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Test suite:5:else statement is successful.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Test suite:6:negative is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:6:negative, suite:5:else statement, suite:4:if statement, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: End test suite:4:if statement.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: End test suite:5:else statement.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: End test suite:6:negative.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:6:negative, suite:5:else statement, suite:4:if statement, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:9:string, suite:8:forty-two, suite:7:positive, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Start test suite:7:positive.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:9:string, suite:8:forty-two, suite:7:positive, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Start test suite:8:forty-two.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Start test suite:9:string.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:9:string, suite:8:forty-two, suite:7:positive, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Test suite:8:forty-two is successful.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Test suite:9:string is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:9:string, suite:8:forty-two, suite:7:positive, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Test suite:7:positive is successful.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: End test suite:8:forty-two.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: End test suite:9:string.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:9:string, suite:8:forty-two, suite:7:positive, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: End test suite:7:positive.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:11:second binding is prioritiy, suite:10:pair of ints, suite:7:positive, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Start test suite:11:second binding is prioritiy.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:12:int identity function, suite:11:second binding is prioritiy, suite:10:pair of ints, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Start test suite:10:pair of ints.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:12:int identity function, suite:11:second binding is prioritiy, suite:10:pair of ints, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Start test suite:12:int identity function.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:12:int identity function, suite:11:second binding is prioritiy, suite:10:pair of ints, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Test suite:10:pair of ints is successful.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Test suite:11:second binding is prioritiy is successful.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Test suite:12:int identity function is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:12:int identity function, suite:11:second binding is prioritiy, suite:10:pair of ints, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: End test suite:10:pair of ints.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: End test suite:11:second binding is prioritiy.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: End test suite:12:int identity function.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:12:int identity function, suite:11:second binding is prioritiy, suite:10:pair of ints, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:15:bop add, suite:14:uop negate, suite:13:application, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Start test suite:13:application.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Start test suite:14:uop negate.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Start test suite:15:bop add.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:15:bop add, suite:14:uop negate, suite:13:application, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Test suite:13:application is successful.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Test suite:14:uop negate is successful.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Test suite:15:bop add is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:15:bop add, suite:14:uop negate, suite:13:application, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: End test suite:13:application.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: End test suite:14:uop negate.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: End test suite:15:bop add.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:15:bop add, suite:14:uop negate, suite:13:application, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:18:bop pipe, suite:17:bop and, suite:16:bop mod, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Start test suite:16:bop mod.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Start test suite:17:bop and.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Start test suite:18:bop pipe.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:18:bop pipe, suite:17:bop and, suite:16:bop mod, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Test suite:16:bop mod is successful.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Test suite:17:bop and is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:18:bop pipe, suite:17:bop and, suite:16:bop mod, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: End test suite:16:bop mod.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: End test suite:17:bop and.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Test suite:18:bop pipe is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:18:bop pipe, suite:17:bop and, suite:16:bop mod, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: End test suite:18:bop pipe.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:20:basic sequence, suite:19:cons, suite:18:bop pipe, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Start test suite:19:cons.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Start test suite:20:basic sequence.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:21:uop ref, suite:20:basic sequence, suite:19:cons, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Start test suite:21:uop ref.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:21:uop ref, suite:20:basic sequence, suite:19:cons, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Test suite:20:basic sequence is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:21:uop ref, suite:20:basic sequence, suite:19:cons, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: Test suite:19:cons is successful.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: End test suite:20:basic sequence.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Test suite:21:uop ref is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:21:uop ref, suite:20:basic sequence, suite:19:cons, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#02 I: End test suite:19:cons.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: End test suite:21:uop ref.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 4 tests running: suite:22:uop not, suite:21:uop ref, suite:19:cons, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Still 3 tests running : suite:23:deref, suite:22:uop not, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 3 tests running: suite:23:deref, suite:22:uop not, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Start test suite:22:uop not.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Start test suite:23:deref.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Still 3 tests running : suite:23:deref, suite:22:uop not, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 3 tests running: suite:23:deref, suite:22:uop not, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#03 E: Test suite:23:deref has failed.
+2023-04-30T22:38:32+00:00 AJComputer#03 E: expected: 4 but got: <ref> in test suite:23:deref.
+2023-04-30T22:38:32+00:00 AJComputer#03 E: Raised at OUnitAssert.assert_failure in file "src/lib/ounit2/advanced/oUnitAssert.ml", line 45, characters 2-27
+2023-04-30T22:38:32+00:00 AJComputer#03 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2023-04-30T22:38:32+00:00 AJComputer#03 E: 
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Still 3 tests running : suite:23:deref, suite:22:uop not, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 3 tests running: suite:23:deref, suite:22:uop not, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: End test suite:23:deref.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Still 3 tests running : suite:23:deref, suite:22:uop not, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 3 tests running: suite:23:deref, suite:22:uop not, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Still 2 tests running : suite:22:uop not, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 2 tests running: suite:22:uop not, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Test suite:22:uop not is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Still 2 tests running : suite:22:uop not, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 2 tests running: suite:22:uop not, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: End test suite:22:uop not.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Still 2 tests running : suite:22:uop not, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 2 tests running: suite:22:uop not, suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Still 1 tests running : suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 1 tests running: suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#04 I: Test suite:3:zero is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Still 1 tests running : suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 1 tests running: suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#04 I: End test suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Still 1 tests running : suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 1 tests running: suite:3:zero.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: 0 tests running: .
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Worker AJComputer#02 has ended.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Worker AJComputer#03 has ended.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Worker AJComputer#04 has ended.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Worker AJComputer#01 died unexpectedly.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Used 4 worker during test execution.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Run 7 tests with shard AJComputer#02.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Run 8 tests with shard AJComputer#03.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Run 1 tests with shard AJComputer#04.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Run 8 tests with shard AJComputer#01.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Check health of shard AJComputer#02, 11 times.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Check health of shard AJComputer#03, 7 times.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Check health of shard AJComputer#04, 1 times.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Check health of shard AJComputer#01, 5 times.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: ==============
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Summary:
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:3:zero is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:22:uop not is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 E: Test suite:23:deref has failed.
+2023-04-30T22:38:32+00:00 AJComputer#00 E: expected: 4 but got: <ref> in test suite:23:deref.
+2023-04-30T22:38:32+00:00 AJComputer#00 E: Raised at OUnitAssert.assert_failure in file "src/lib/ounit2/advanced/oUnitAssert.ml", line 45, characters 2-27
+2023-04-30T22:38:32+00:00 AJComputer#00 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2023-04-30T22:38:32+00:00 AJComputer#00 E: 
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:21:uop ref is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:19:cons is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:20:basic sequence is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:18:bop pipe is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:17:bop and is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:16:bop mod is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:15:bop add is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:14:uop negate is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:13:application is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:12:int identity function is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:11:second binding is prioritiy is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:10:pair of ints is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:7:positive is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:9:string is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:8:forty-two is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:6:negative is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:5:else statement is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:4:if statement is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:2:false is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:1:true is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Test suite:0:unit is successful.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Ran: 24 tests in: 0.11 seconds.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Cases: 24.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Tried: 24.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Errors: 0.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Failures: 1.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Skip: 0.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Todo: 0.
+2023-04-30T22:38:32+00:00 AJComputer#00 I: Timeout: 0.

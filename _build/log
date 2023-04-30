@@ -1,9 +1,9 @@
-# dune build check
+# dune exec test/main.exe
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: /home/aaj34/CS3110/a4
 # Auto-detected concurrency: 8
-$ /home/aaj34/.opam/cs3110-2023sp/bin/ocamlc.opt -config > /tmp/dune_87a26c_output
+$ /home/aaj34/.opam/cs3110-2023sp/bin/ocamlc.opt -config > /tmp/dune_535d4d_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -111,6 +111,5 @@ $ /home/aaj34/.opam/cs3110-2023sp/bin/ocamlc.opt -config > /tmp/dune_87a26c_outp
 #      ; windows_unicode = false
 #      }
 #  }
-$ (cd _build/default && /home/aaj34/.opam/cs3110-2023sp/bin/ocamlc.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66..70 -warn-error -a+31 -g -bin-annot -I check/.check.eobjs/byte -I /home/aaj34/.opam/cs3110-2023sp/lib/menhirLib -I src/.rml.objs/byte -no-alias-deps -opaque -o check/.check.eobjs/byte/dune__exe__Check.cmi -c -intf check/check.mli)
-$ (cd _build/default && /home/aaj34/.opam/cs3110-2023sp/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66..70 -warn-error -a+31 -g -I check/.check.eobjs/byte -I check/.check.eobjs/native -I /home/aaj34/.opam/cs3110-2023sp/lib/menhirLib -I src/.rml.objs/byte -I src/.rml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o check/.check.eobjs/native/dune__exe__Check.cmx -c -impl check/check.ml)
-$ (cd _build/default && /home/aaj34/.opam/cs3110-2023sp/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66..70 -warn-error -a+31 -g -o check/check.exe /home/aaj34/.opam/cs3110-2023sp/lib/ocaml/str.cmxa -I /home/aaj34/.opam/cs3110-2023sp/lib/ocaml /home/aaj34/.opam/cs3110-2023sp/lib/menhirLib/menhirLib.cmxa src/rml.cmxa check/.check.eobjs/native/dune__exe__Check.cmx)
+$ (cd _build/default && /home/aaj34/.opam/cs3110-2023sp/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66..70 -warn-error -a+31 -g -I test/.main.eobjs/byte -I test/.main.eobjs/native -I /home/aaj34/.opam/cs3110-2023sp/lib/menhirLib -I /home/aaj34/.opam/cs3110-2023sp/lib/ounit2 -I /home/aaj34/.opam/cs3110-2023sp/lib/ounit2/advanced -I /home/aaj34/.opam/cs3110-2023sp/lib/seq -I /home/aaj34/.opam/cs3110-2023sp/lib/stdlib-shims -I src/.rml.objs/byte -I src/.rml.objs/native -intf-suffix .ml -no-alias-deps -opaque -o test/.main.eobjs/native/dune__exe__Main.cmx -c -impl test/main.ml)
+$ (cd _build/default && /home/aaj34/.opam/cs3110-2023sp/bin/ocamlopt.opt -w +a-4-6-7-9-27-29-30-32..42-44-45-48-50-60-66..70 -warn-error -a+31 -g -o test/main.exe /home/aaj34/.opam/cs3110-2023sp/lib/ocaml/str.cmxa -I /home/aaj34/.opam/cs3110-2023sp/lib/ocaml /home/aaj34/.opam/cs3110-2023sp/lib/menhirLib/menhirLib.cmxa src/rml.cmxa /home/aaj34/.opam/cs3110-2023sp/lib/ocaml/unix.cmxa -I /home/aaj34/.opam/cs3110-2023sp/lib/ocaml /home/aaj34/.opam/cs3110-2023sp/lib/stdlib-shims/stdlib_shims.cmxa /home/aaj34/.opam/cs3110-2023sp/lib/ounit2/advanced/oUnitAdvanced.cmxa /home/aaj34/.opam/cs3110-2023sp/lib/ounit2/oUnit.cmxa test/.main.eobjs/native/dune__exe__Main.cmx)

@@ -1,0 +1,24 @@
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Start test suite:0:unit.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Test suite:0:unit is successful.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: End test suite:0:unit.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Start test suite:4:if statement.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Test suite:4:if statement is successful.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: End test suite:4:if statement.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Start test suite:9:string.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Test suite:9:string is successful.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: End test suite:9:string.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Start test suite:10:pair of ints.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Test suite:10:pair of ints is successful.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: End test suite:10:pair of ints.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Start test suite:15:bop add.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Test suite:15:bop add is successful.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: End test suite:15:bop add.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Start test suite:16:bop mod.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Test suite:16:bop mod is successful.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: End test suite:16:bop mod.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Start test suite:20:basic sequence.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Test suite:20:basic sequence is successful.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: End test suite:20:basic sequence.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Start test suite:22:uop not.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: Test suite:22:uop not is successful.
+2023-04-30T22:38:32+00:00 AJComputer#01 I: End test suite:22:uop not.

@@ -1,0 +1,28 @@
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Start test suite:2:false.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Test suite:2:false is successful.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: End test suite:2:false.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Start test suite:6:negative.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Test suite:6:negative is successful.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: End test suite:6:negative.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Start test suite:7:positive.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Test suite:7:positive is successful.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: End test suite:7:positive.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Start test suite:12:int identity function.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Test suite:12:int identity function is successful.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: End test suite:12:int identity function.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Start test suite:13:application.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Test suite:13:application is successful.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: End test suite:13:application.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Start test suite:18:bop pipe.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Test suite:18:bop pipe is successful.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: End test suite:18:bop pipe.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Start test suite:21:uop ref.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Test suite:21:uop ref is successful.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: End test suite:21:uop ref.
+2023-04-30T22:38:32+00:00 AJComputer#03 I: Start test suite:23:deref.
+2023-04-30T22:38:32+00:00 AJComputer#03 E: Test suite:23:deref has failed.
+2023-04-30T22:38:32+00:00 AJComputer#03 E: expected: 4 but got: <ref> in test suite:23:deref.
+2023-04-30T22:38:32+00:00 AJComputer#03 E: Raised at OUnitAssert.assert_failure in file "src/lib/ounit2/advanced/oUnitAssert.ml", line 45, characters 2-27
+2023-04-30T22:38:32+00:00 AJComputer#03 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2023-04-30T22:38:32+00:00 AJComputer#03 E: 
+2023-04-30T22:38:32+00:00 AJComputer#03 I: End test suite:23:deref.

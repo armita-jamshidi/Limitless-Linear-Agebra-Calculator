@@ -1,0 +1,6 @@
+description = ""
+requires = "menhirLib str"
+archive(byte) = "rml.cma"
+archive(native) = "rml.cmxa"
+plugin(byte) = "rml.cma"
+plugin(native) = "rml.cmxs"
